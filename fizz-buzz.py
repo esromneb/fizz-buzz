@@ -1,8 +1,10 @@
 for i in range(1,100):
+    output = ""
+
     if( i % 3 == 0 ):
-        print "fizz"
+        output += "Fizz"
 
     if( i % 5 == 0 ):
-        print "buzz"
+        output += "Buzz"
 
-    print i
+    print ( output == "" ) and i or output
